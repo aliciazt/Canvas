@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aliciazarate.colores.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_height="60dp"
+        android:text="Utiliza los controles para cambiar el color"
+        android:textSize="18sp"/>
+
+
+    <View
+        android:id="@+id/vista"
+        android:layout_height="102dp"
+        android:layout_width="213dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_weight="1.19" />
+
+
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_width="fill_parent"
+        android:layout_height="220dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:layout_weight="0.94">
+
+
+        <SeekBar
+            android:id="@+id/seekbar1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#f9102f"
+            android:max="255"
+            android:layout_margin="20dp" />
+        <SeekBar
+            android:id="@+id/seekbar2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:max="255"
+            android:background="#4af416"
+            android:layout_margin="20dp" />
+        <SeekBar
+            android:id="@+id/seekbar3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#3857e4"
+            android:max="255"
+            android:layout_margin="20dp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
